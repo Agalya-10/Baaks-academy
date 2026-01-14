@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+* {
+  font-family: 'Poppins';
+}
+
+.ng-select.ng-invalid.ng-touched .ng-select-container {
+  border: 1.5px solid #ff0000 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 4px;
+}
