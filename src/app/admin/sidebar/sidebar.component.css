@@ -1,0 +1,17 @@
+.heading{
+    padding-left: 16px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-bottom: 8px;
+    padding-top: 28px;
+    color: #6B7280;
+}
+.side-heading{
+    padding-left: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.main-div{
+    background-color: #F9FAFB;
+}

@@ -8,17 +8,20 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgSelectModule } from '@ng-select/ng-select';
 
 
+
 @NgModule({
   declarations: [
     MasterComponent,
-    SignupComponent
+    SignupComponent,
+    
   ],
   imports: [
     CommonModule,
     MasterRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    NgSelectModule
+    NgSelectModule,
+    
 
   ]
 })

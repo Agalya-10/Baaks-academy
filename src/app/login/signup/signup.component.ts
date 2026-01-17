@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class SignupComponent {
   form !: FormGroup;
-  roles = ['Admin', 'User', 'Manager'];
+  roles = ['Admin', 'Student', 'Teacher'];
 
   constructor(private fb: FormBuilder,private router: Router) { }
   ngOnInit() {
@@ -19,7 +19,9 @@ export class SignupComponent {
     this.form = this.fb.group({
       "Email": [null, (Validators.required)],
       "Password": [null, (Validators.required)],
-      "Roles": [null, (Validators.required)]
+      "Role": [null, (Validators.required)],
+      "Repassword":[null,(Validators.required)]
+
     })
   }
   onSubmit() {
@@ -28,7 +30,18 @@ export class SignupComponent {
       return;
 
     }
-    this.router.navigate(['/admin']);
+    if(this.form.get('Role')?.value==='Admin'){
+      this.router.navigate(['/admin']);
+    }
+    else if(this.form.get('Role')?.value==='Student'){
+      this.router.navigate(['/student']);
+    }
+    else if(this.form.get('Role')?.value==='Teacher')
+    {
+      this.router.navigate(['/teacher'])
+    }
   }
 
-}
+  signin(){
+    this.router.navigate([''])
+}}
