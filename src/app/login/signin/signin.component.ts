@@ -12,4 +12,9 @@ export class SigninComponent {
     console.log("ff")
     this.router.navigate(['/signup'])
   }
+  up()
+  {
+    console.log("ff")
+    this.router.navigate(['/signup'])
+  }
 }
