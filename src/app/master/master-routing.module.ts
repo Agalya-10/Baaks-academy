@@ -11,6 +11,7 @@ import { SigninComponent } from '../login/signin/signin.component';
 const routes: Routes = [{ path: '', component: MasterComponent,
   children:[{path:'',component:SigninComponent},
     {path:'signup',component:SignupComponent},
+    {path:'signin',component:SigninComponent},
     {path: 'admin',loadChildren: () =>import('../admin/admin/admin.module').then(m => m.AdminModule)},
     {path:'student',loadChildren:()=>import('../student/studentmain/studentmain.module').then(m=>m.StudentmainModule)},
     {path:'teacher',loadChildren:()=>import('../teacher/teachermain/teachermain.module').then(m=>m.TeachermainModule)}
