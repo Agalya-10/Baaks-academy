@@ -7,6 +7,7 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { HeadbarComponent } from './admin/headbar/headbar.component';
 import { SidebarComponent } from './admin/sidebar/sidebar.component';
 import { FooterComponent } from './admin/footer/footer.component';
+import { SigninComponent } from './login/signin/signin.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FooterComponent } from './admin/footer/footer.component';
     DashboardComponent,
     HeadbarComponent,
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
