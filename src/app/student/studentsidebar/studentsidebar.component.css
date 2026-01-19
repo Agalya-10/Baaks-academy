@@ -1,0 +1,79 @@
+.global_div
+{
+    width: 300px;
+    height: 920px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.heading_Section
+{
+    padding-top: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+}
+.user_img
+{
+    height: 74px;
+    width: 74px;
+    border-radius: 36.22px;
+    overflow: hidden;
+}
+.imguser
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.rightside_heading
+{
+    padding-top: 15px;
+    padding-left: 12px;
+}
+.user_role
+{
+    color: #757575;
+    width: 152px;
+    letter-spacing: 1.4px;
+    font-family: inter;
+    text-transform: uppercase;
+    line-height: 22px;
+    font-weight: medium;
+}
+.divider
+{
+    margin-top: 12px;
+    width: 260px;
+    height: 2px;
+    background-color: #F6F6F6;
+    border-radius: 3px;
+    margin-left: 24px;
+}
+.menu_heading
+{
+    color: #757575;
+    margin-top: 12px;
+    margin-left: 37px;
+}
+
+.logout
+{
+    color:#D55F5A;
+    margin-left: 40px;
+    margin-top: 570px;
+}
+.logout:hover
+{
+    cursor: pointer;
+}
+.Menu_item
+{
+    margin-left: 32px;
+}
+.menu-itemname
+{
+    padding-top: 3px;
+    padding-left: 4px;
+}
