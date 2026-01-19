@@ -7,11 +7,13 @@ import { StudentmainComponent } from '../student/studentmain/studentmain.compone
 import { TeachermainComponent } from '../teacher/teachermain/teachermain.component';
 import { AdminModule } from '../admin/admin/admin.module';
 import { SigninComponent } from '../login/signin/signin.component';
+import { ForgotComponent } from '../login/forgot/forgot.component';
 
 const routes: Routes = [{ path: '', component: MasterComponent,
   children:[{path:'',component:SigninComponent},
     {path:'signup',component:SignupComponent},
     {path:'signin',component:SigninComponent},
+    {path:'forgot',component:ForgotComponent},
     {path: 'admin',loadChildren: () =>import('../admin/admin/admin.module').then(m => m.AdminModule)},
     {path:'student',loadChildren:()=>import('../student/studentmain/studentmain.module').then(m=>m.StudentmainModule)},
     {path:'teacher',loadChildren:()=>import('../teacher/teachermain/teachermain.module').then(m=>m.TeachermainModule)}
