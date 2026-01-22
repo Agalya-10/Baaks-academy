@@ -1,11 +1,12 @@
 <div class="mainDiv">
     <form class="form d-flex" [formGroup]="form">
-        <div class="col-6 px-4">
+        <div class="col-12 px-4">
             <h1 class="heading mt-4 fw-bold">Signup</h1>
 
             <div class="mt-3">
                 <label>Email</label>
-                <input class="mt-1" type="email" placeholder="abcd@gmail.com" autocomplete="off" formControlName="Email">
+                <input class="mt-2" type="email" placeholder="abcd@gmail.com" autocomplete="off"
+                    formControlName="Email">
                 <div class=" ms-3" style="color: #ff0000 ;font-size: 12px;"
                     *ngIf="form.get('Email')?.invalid && (form.get('Email')?.touched || form.get('Email')?.dirty)">
                     Please enter your Email
@@ -13,16 +14,16 @@
             </div>
             <div class="mt-3">
                 <label>Role</label>
-                <ng-select class="mt-1" [items]="roles" placeholder="Select role" formControlName="Role">
+                <ng-select class="mt-2" [items]="roles" placeholder="Select role" formControlName="Role">
                 </ng-select>
-                <div class=" ms-3" style="color: #ff0000 ;font-size: 12px;"
-                    *ngIf="form.get('Roles')?.invalid && (form.get('Roles')?.touched || form.get('Roles')?.dirty)">
+                <div class=" ms-2" style="color: #ff0000 ;font-size: 12px;"
+                    *ngIf="form.get('Role')?.invalid && (form.get('Role')?.touched || form.get('Role')?.dirty)">
                     Please select your Role
                 </div>
             </div>
             <div class="mt-3">
                 <label>Password</label>
-                <input class="mt-1" type="password" placeholder="3456789" autocomplete="off" formControlName="Password">
+                <input class="mt-2" type="password" placeholder="3456789" autocomplete="off" formControlName="Password">
                 <div class=" ms-2" style="color: #ff0000 ;font-size: 12px;"
                     *ngIf="form.get('Password')?.invalid && (form.get('Password')?.touched || form.get('Password')?.dirty)">
                     Please enter your Password
@@ -30,7 +31,8 @@
             </div>
             <div class="mt-3">
                 <label>Confirm Password</label>
-                <input class="mt-1" type="password" placeholder="3456789" autocomplete="off" formControlName="Repassword">
+                <input class="mt-2" type="password" placeholder="3456789" autocomplete="off"
+                    formControlName="Repassword">
                 <div class=" ms-2" style="color: #ff0000 ;font-size: 12px;"
                     *ngIf="form.get('Repassword')?.invalid && (form.get('Repassword')?.touched || form.get('Repassword')?.dirty)">
                     Please re enter your Password
@@ -38,12 +40,13 @@
             </div>
             <button class="mt-5 px-4 col-12" (click)="onSubmit()">Sign up</button>
             <div class="harizontal mt-4"></div>
-            <div class="Forget mt-3">Already have an account?<span><a href="" style="color: #CE40F3;" (click)="signin()">Sign in</a></span></div>
+            <div class="Forget mt-3">Already have an account?<span><a href="" style="color: #8c15aa"
+                        (click)="signin()">Sign in</a></span></div>
 
         </div>
-        <div class="col-6">
+        <!-- <div class="col-6">
             <img src="assets/signup.png">
-        </div>
+        </div> -->
 
     </form>
 </div>

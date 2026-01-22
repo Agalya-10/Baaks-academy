@@ -3,11 +3,10 @@
     justify-content: center;
     margin-top: 5rem;
 }
-
 .form {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     box-shadow: 10px;
-    width: 58%;
+    width: 32%;
     height: 650px;
     display: flex;
     padding: 1rem;
@@ -15,11 +14,11 @@
 
 .heading {
     text-align: center;
-    color: #CE40F3;
+    color: #8c15aa;
 }
 
 label {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
 }
 input {
@@ -30,11 +29,12 @@ input {
     border-radius: 4px;
     border: 1px solid rgb(199, 197, 197);
     background-color: white;
+    font-size: 13px;
 }
 
 button {
     border: none;
-    background-color: #CE40F3;
+    background-color: #8c15aa;
     height: 46px;
     color: white;
     font-size: 20px;
@@ -43,7 +43,7 @@ button {
 }
 
 button:hover {
-    background-color: #d661f3;
+    background-color: #9e02c5;
 }
 
 .Forget {
@@ -57,6 +57,7 @@ input.ng-invalid.ng-touched {
     outline: none !important;
     border-radius: 4px;
 }
+
 .harizontal {
     border: 0.1px solid rgb(236, 228, 228);
     border-radius: 2px;
