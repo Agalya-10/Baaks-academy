@@ -11,3 +11,6 @@
   outline: none !important;
   border-radius: 4px;
 }
+.ng-select .ng-select-container{
+  height: 41px !important;
+}

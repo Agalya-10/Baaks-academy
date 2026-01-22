@@ -11,16 +11,17 @@ export class SignupComponent {
   form !: FormGroup;
   roles = ['Admin', 'Student', 'Teacher'];
 
-  constructor(private fb: FormBuilder,private router: Router) { }
+  constructor(private fb: FormBuilder, private router: Router) { }
   ngOnInit() {
     this.validation();
   }
   validation() {
     this.form = this.fb.group({
       "Email": [null, (Validators.required)],
-      "Password": [null, (Validators.required)],
+      "phoneno": [null, (Validators.required)],
       "Role": [null, (Validators.required)],
-      "Repassword":[null,(Validators.required)]
+      "lastname": [null, (Validators.required)],
+      "firstname":[null,(Validators.required)]
 
     })
   }
@@ -30,18 +31,18 @@ export class SignupComponent {
       return;
 
     }
-    if(this.form.get('Role')?.value==='Admin'){
+    if (this.form.get('Role')?.value === 'Admin') {
       this.router.navigate(['/admin']);
     }
-    else if(this.form.get('Role')?.value==='Student'){
+    else if (this.form.get('Role')?.value === 'Student') {
       this.router.navigate(['/student']);
     }
-    else if(this.form.get('Role')?.value==='Teacher')
-    {
+    else if (this.form.get('Role')?.value === 'Teacher') {
       this.router.navigate(['/teacher'])
     }
   }
 
-  signin(){
+  signin() {
     this.router.navigate([''])
-}}
+  }
+}
