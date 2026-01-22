@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { TeacherdashboardComponent } from './teacher/teacherdashboard/teacherdashboard.component';
 import { StudentdashboardComponent } from './student/studentdashboard/studentdashboard.component';
 import { SigninComponent } from './login/signin/signin.component';
+import { OtpComponent } from './login/otp/otp.component';
+import { CreatepasswordComponent } from './login/createpassword/createpassword.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TeacherdashboardComponent,
     StudentdashboardComponent,
-    SigninComponent
+    SigninComponent,
+    OtpComponent,
+    CreatepasswordComponent
   ],
   imports: [
     BrowserModule,

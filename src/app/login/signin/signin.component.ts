@@ -12,4 +12,8 @@ export class SigninComponent {
     console.log("ff")
     this.router.navigate(['/signup'])
   }
+  fogetcall()
+  {
+    this.router.navigate(['/forgot'])
+  }
 }
